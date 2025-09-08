@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drum Kit with Themes</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="assests/icons/favicon.ico">
+  <link rel="stylesheet" href="styles/drum-kit.css" />
+
+  <!-- External Themes-Library CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iem-pranav/Themes-Library@main/styles/themes.css" />
+</head>
+<body>
+  <h1>Drum Kit 🎵</h1>
+  <div id="drum-kit">
+
+    <div id="drum-kit">
+  <button class="drum key" data-sound="clap.wav" data-key="65">
+    <span class="drum-name">CLAP</span>
+    <span class="drum-key">A</span>
+  </button>
+  <button class="drum key" data-sound="hihat.wav" data-key="83">
+    <span class="drum-name">HITHAT</span>
+    <span class="drum-key">S</span>
+  </button>
+  <button class="drum key" data-sound="kick.wav" data-key="68">
+    <span class="drum-name">KICK</span>
+    <span class="drum-key">D</span>
+  </button>
+  <button class="drum key" data-sound="openhat.wav" data-key="70">
+    <span class="drum-name">OPENHAT</span>
+    <span class="drum-key">F</span>
+  </button>
+  <button class="drum key" data-sound="boom.wav" data-key="71">
+    <span class="drum-name">BOOM</span>
+    <span class="drum-key">G</span>
+  </button>
+  <button class="drum key" data-sound="ride.wav" data-key="72">
+    <span class="drum-name">RIDE</span>
+    <span class="drum-key">H</span>
+  </button>
+  <button class="drum key" data-sound="snare.wav" data-key="74">
+    <span class="drum-name">SNARE</span>
+    <span class="drum-key">J</span>
+  </button>
+  <button class="drum key" data-sound="tom.wav" data-key="75">
+    <span class="drum-name">TOM</span>
+    <span class="drum-key">K</span>
+  </button>
+  <button class="drum key" data-sound="tink.wav" data-key="76">
+    <span class="drum-name">TINK</span>
+    <span class="drum-key">L</span>
+  </button>
+  </div>
+
+  <!-- Audio elements for keyboard sound playback -->
+  <audio data-key="65" src="sounds/projects_drum-kit_sounds_clap.wav"></audio>
+  <audio data-key="83" src="sounds/projects_drum-kit_sounds_hihat.wav"></audio>
+  <audio data-key="68" src="sounds/projects_drum-kit_sounds_kick.wav"></audio>
+  <audio data-key="70" src="sounds/projects_drum-kit_sounds_openhat.wav"></audio>
+  <audio data-key="71" src="sounds/projects_drum-kit_sounds_boom.wav"></audio>
+  <audio data-key="72" src="sounds/projects_drum-kit_sounds_ride.wav"></audio>
+  <audio data-key="74" src="sounds/projects_drum-kit_sounds_snare.wav"></audio>
+  <audio data-key="75" src="sounds/projects_drum-kit_sounds_tom.wav"></audio>
+  <audio data-key="76" src="sounds/projects_drum-kit_sounds_tink.wav"></audio>
+
+  <!-- External Themes-Library JS -->
+  <script src="https://cdn.jsdelivr.net/gh/iem-pranav/Themes-Library@main/scripts/themes.js"></script>
+  <!-- Your Drum Kit JS -->
+  <script src="scripts/drum-kit.js"></script>
+</body>
+</html>
