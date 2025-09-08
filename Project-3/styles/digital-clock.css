@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setup full viewport height and center content */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(255, 249, 249);
+}
+
+.container {
+  width: 800px;
+  height: 180px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(40px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.clock {
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+  user-select: none;
+}
+
+.time {
+  display: inline-block;
+  width: 110px;
+  text-align: center;
+  position: relative;
+  font-weight: 700;
+  letter-spacing: 6px;
+  /* Optional: add subtle text-shadow */
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+#hrs::after,
+#min::after,
+#sec::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Add labels below each time part */
+#hrs::after {
+  content: "Hours";
+}
+
+#min::after {
+  content: "Minutes";
+}
+
+#sec::after {
+  content: "Seconds";
+}
