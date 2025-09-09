@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll</title>
+    <link rel="icon" href="assets/icons/dice.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/iem-pranav/Themes-Library@main/styles/themes.css"
+    />
+    <link rel="stylesheet" href="styles/dice-roll.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="main-heading">Dice Roll</h1>
+
+      <div class="dice-roll-container">
+        <div class="dice-side">
+          <div class="dice-number" id="dice-number-1" aria-hidden="false">
+            <span class="pip center"></span>
+          </div>
+          <div class="dice-number" id="dice-number-2" aria-hidden="true">
+            <span class="pip top-left"></span>
+            <span class="pip bottom-right"></span>
+          </div>
+          <div class="dice-number" id="dice-number-3" aria-hidden="true">
+            <span class="pip top-left"></span>
+            <span class="pip center"></span>
+            <span class="pip bottom-right"></span>
+          </div>
+          <div class="dice-number" id="dice-number-4" aria-hidden="true">
+            <span class="pip top-left"></span>
+            <span class="pip top-right"></span>
+            <span class="pip bottom-left"></span>
+            <span class="pip bottom-right"></span>
+          </div>
+          <div class="dice-number" id="dice-number-5" aria-hidden="true">
+            <span class="pip top-left"></span>
+            <span class="pip top-right"></span>
+            <span class="pip center"></span>
+            <span class="pip bottom-left"></span>
+            <span class="pip bottom-right"></span>
+          </div>
+          <div class="dice-number" id="dice-number-6" aria-hidden="true">
+            <span class="pip top-left"></span>
+            <span class="pip top-right"></span>
+            <span class="pip middle-left"></span>
+            <span class="pip middle-right"></span>
+            <span class="pip bottom-left"></span>
+            <span class="pip bottom-right"></span>
+          </div>
+        </div>
+
+        <p id="rolled-result">You rolled: 1</p>
+
+        <button class="roll-dice-button" type="button">ROLL</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/iem-pranav/Themes-Library@main/scripts/themes.js"></script>
+    <script src="scripts/dice-roll.js"></script>
+
+    <footer>
+      <p>
+        Made with ❤️ by
+        <a href="https://github.com/iem-pranav" class="username-footer"
+          >Pranav</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
